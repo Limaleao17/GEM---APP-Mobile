@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GEM</string>
+    <string name="boas_vindas">Bem vindo ao GEM</string>
+    <string name="login">Login</string>
+    <string name="insiraseuemail">Insira seu e-mail</string>
+    <string name="Senha">Senha</string>
+    <string name="insirasuasenha">Insira sua senha</string>
+    <string name="enter">Entrar</string>
+    <string name="esqueci_minha_senha">Esqueci minha senha</string>
+    <string name="boletim">Boletim</string>
+    <string name="calendario">Calendário</string>
+    <string name="informacoes_pessoais">Dados Pessoais</string>
+    <string name="navigation_drawer_open">Abrir</string>
+    <string name="navigation_drawe_close">Fechar</string>
+    <string name="navigation_drawer_close">Fechar</string>
+</resources>

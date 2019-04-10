@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/recarregar"
+          android:icon="@drawable/recarregar"
+          android:title="@string/boletim"
+          app:showAsAction="always" />
+    <item android:id="@+id/pesquisar"
+          android:icon="@drawable/pesquisar"
+          android:title="@string/calendario"
+          app:showAsAction="always" />
+    <item android:id="@+id/sobre"
+          android:title="Sobre"
+          app:showAsAction="ifRoom" />
+    <item android:id="@+id/ajuda"
+          android:title="Ajuda"
+          app:showAsAction="ifRoom"/>
+
+</menu>
