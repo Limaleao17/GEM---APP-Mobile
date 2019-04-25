@@ -7,10 +7,10 @@
     <string name="insirasuasenha">Insira sua senha</string>
     <string name="enter">Entrar</string>
     <string name="esqueci_minha_senha">Esqueci minha senha</string>
-    <string name="boletim">Boletim</string>
+    <string name="boletim">Notas</string>
     <string name="calendario">Calendário</string>
     <string name="informacoes_pessoais">Dados Pessoais</string>
     <string name="navigation_drawer_open">Abrir</string>
-    <string name="navigation_drawe_close">Fechar</string>
     <string name="navigation_drawer_close">Fechar</string>
+    <string name="title_activity_horario">HorarioActivity</string>
 </resources>

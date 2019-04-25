@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="br.com.example.grupoestudantildemusica">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,19 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".SplashActivity">
+        <activity android:name=".InstrumentosActivity">
+        </activity>
+        <activity android:name=".OuvidoriaActivity">
+        </activity>
+        <activity android:name=".ContatoProfessoresActivity">
+        </activity>
+        <activity android:name=".BibliotecaActivity">
+        </activity>
+        <activity android:name=".AulasMinistradasActivity">
+        </activity>
+        <activity android:name=".HorarioActivity">
+        </activity>
+        <activity android:name=".ManualAlunoActivity">
         </activity>
         <activity
                 android:name=".AjudaActivity"
@@ -20,11 +34,11 @@
                 android:theme="@style/MenuTheme">
         </activity>
         <activity
-                android:name=".BoletimActivity"
+                android:name=".NotasActivity"
                 android:theme="@style/MenuTheme">
         </activity>
         <activity
-                android:name=".DadosPessoaisActivity"
+                android:name=".FaltasActivity"
                 android:theme="@style/MenuTheme">
         </activity>
         <activity
@@ -33,9 +47,13 @@
         </activity>
         <activity
                 android:name=".TelaInicialActivity"
-                android:theme="@style/MenuTheme">
+                android:theme="@style/AppTheme.Toolbar">
         </activity>
-        <activity android:name=".LoginActivity">
+        <activity
+                android:name=".LoginActivity"
+                android:theme="@style/LoginTheme">
+        </activity>
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

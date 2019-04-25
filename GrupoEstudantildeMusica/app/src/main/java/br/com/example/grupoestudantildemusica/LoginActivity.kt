@@ -3,6 +3,7 @@ package br.com.example.grupoestudantildemusica
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Debug
 import android.widget.Toast
 import kotlinx.android.synthetic.main.login_activity.*
 
