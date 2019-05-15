@@ -5,7 +5,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-              tools:context=".CadastroContatosActivity">
+              tools:context=".Controladores.CadastroContatosActivity">
 
     <EditText
             android:id="@+id/nomeProfessor"
@@ -20,16 +20,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Professor"
+            android:hint="Endereço"
             android:inputType="textPersonName" />
 
     <EditText
-            android:id="@+id/urlFoto"
+            android:id="@+id/materiaProfessor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="URL Foto"
-            android:inputType="textPersonName"/>
+            android:hint="Professor"
+            android:inputType="textPersonName" />
+
 
     <Button
             android:id="@+id/salvarContatos"

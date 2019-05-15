@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#0000cd"
-        tools:context="br.com.example.grupoestudantildemusica.SplashActivity">
+        tools:context="br.com.example.grupoestudantildemusica.Controladores.SplashActivity">
 
     <ImageView
             android:layout_width="180dp"

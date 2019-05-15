@@ -6,58 +6,61 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
-            android:name=".GEMApplication"
+            android:name=".Utils.GEMApplication"
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".CadastroContatosActivity">
+        <activity android:name=".Controladores.ContatoActivity">
         </activity>
-        <activity android:name=".InstrumentosActivity">
+        <activity android:name=".Controladores.CadastroContatosActivity"
+                    android:parentActivityName=".Controladores.ContatoProfessoresListActivity">
         </activity>
-        <activity android:name=".OuvidoriaActivity">
+        <activity android:name=".Controladores.InstrumentosActivity">
         </activity>
-        <activity android:name=".ContatoProfessoresActivity">
+        <activity android:name=".Controladores.OuvidoriaActivity">
         </activity>
-        <activity android:name=".BibliotecaActivity">
+        <activity android:name=".Controladores.ContatoProfessoresListActivity">
         </activity>
-        <activity android:name=".AulasMinistradasActivity">
+        <activity android:name=".Controladores.BibliotecaActivity">
         </activity>
-        <activity android:name=".HorarioActivity">
+        <activity android:name=".Controladores.AulasMinistradasActivity">
         </activity>
-        <activity android:name=".ManualAlunoActivity">
+        <activity android:name=".Controladores.HorarioActivity">
+        </activity>
+        <activity android:name=".Controladores.ManualAlunoActivity">
         </activity>
         <activity
-                android:name=".AjudaActivity"
+                android:name=".Controladores.AjudaActivity"
                 android:theme="@style/MenuTheme">
         </activity>
         <activity
-                android:name=".SobreActivity"
+                android:name=".Controladores.SobreActivity"
                 android:theme="@style/MenuTheme">
         </activity>
         <activity
-                android:name=".NotasActivity"
+                android:name=".Controladores.NotasActivity"
                 android:theme="@style/MenuTheme">
         </activity>
         <activity
-                android:name=".FaltasActivity"
+                android:name=".Controladores.FaltasActivity"
                 android:theme="@style/MenuTheme">
         </activity>
         <activity
-                android:name=".CalendarioActivity"
+                android:name=".Controladores.CalendarioActivity"
                 android:theme="@style/MenuTheme">
         </activity>
         <activity
-                android:name=".TelaInicialActivity"
+                android:name=".Controladores.TelaInicialActivity"
                 android:theme="@style/AppTheme.Toolbar">
         </activity>
         <activity
-                android:name=".LoginActivity"
+                android:name=".Controladores.LoginActivity"
                 android:theme="@style/LoginTheme">
         </activity>
-        <activity android:name=".SplashActivity">
+        <activity android:name=".Controladores.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
