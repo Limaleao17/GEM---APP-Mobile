@@ -50,7 +50,7 @@ class ContatoAdapter  (
     }
 
     override fun onBindViewHolder(holder: ContatosViewHolder, position: Int) {
-        val contexto = holder.itemView.context
+        holder.itemView.context
         val contatos = this.contatos[position]
 
         holder.cardNome.text = contatos.nome

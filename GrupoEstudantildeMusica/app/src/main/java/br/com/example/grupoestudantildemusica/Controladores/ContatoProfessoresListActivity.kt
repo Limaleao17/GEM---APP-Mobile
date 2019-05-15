@@ -171,20 +171,7 @@ class ContatoProfessoresListActivity : AppCompatActivity(), NavigationView.OnNav
     }
 
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_principal, menu)
-        (menu?.findItem(R.id.pesquisar)?.actionView as SearchView).setOnQueryTextListener(object: SearchView.OnQueryTextListener{
 
-           override fun onQueryTextChange(newTest: String): Boolean{
-               return false
-            }
-
-            override fun onQueryTextSubmit(query: String): Boolean{
-                return false
-            }
-        })
-     return true
-   }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         val id = item?.itemId
