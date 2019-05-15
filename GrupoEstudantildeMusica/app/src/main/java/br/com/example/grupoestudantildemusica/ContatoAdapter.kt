@@ -22,12 +22,16 @@ class ContatoAdapter  (
 
         val cardNome: TextView
         val cardImg: ImageView
+        val cardEndereco: TextView
+        val cardMateria: TextView
         val cardProgress: ProgressBar
         val cardView: CardView
 
         init {
             cardNome = view.cardNome
             cardImg = view.cardImg
+            cardEndereco = view.cardEndereco
+            cardMateria = view.cardMateria
             cardProgress = view.cardProgress
             cardView = view.card_contato_nome1
         }

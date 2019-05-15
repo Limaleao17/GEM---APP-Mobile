@@ -10,10 +10,8 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.SearchView
 import android.widget.Toast
 import android.support.v7.widget.Toolbar
-import kotlinx.android.synthetic.main.toolbar.*
 
 
 class TelaInicialActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -156,6 +154,12 @@ class TelaInicialActivity : AppCompatActivity(), NavigationView.OnNavigationItem
             startActivity(intent)
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    fun enviaNotificacao(){
+        val intent = Intent(this, ContatoProfessoresActivity::class.java)
+        NotificationUtil.create(1, intent,
+            "GEM", "Mensagem nova")
     }
 }
 

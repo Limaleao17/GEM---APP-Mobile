@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "221862391875",
+    "firebase_url": "https://gem-app-bb44b.firebaseio.com",
+    "project_id": "gem-app-bb44b",
+    "storage_bucket": "gem-app-bb44b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221862391875:android:03d64a754c980b3b",
+        "android_client_info": {
+          "package_name": "br.com.example.grupoestudantildemusica"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "221862391875-748t1bevmk191hvj9jmiugoiqhhkrmuf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjU4QB0l4YbtxrAjblYWMDUfWYd_W6Z88"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "221862391875-748t1bevmk191hvj9jmiugoiqhhkrmuf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
