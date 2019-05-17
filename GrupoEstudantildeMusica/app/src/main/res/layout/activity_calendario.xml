@@ -1,114 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView
+<LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:card_view="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/toolsh"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/card_calendario"
-        app:cardPreventCornerOverlap="false"
-        app:cardUseCompatPadding="false"
-        card_view:cardCornerRadius="2dp"
-        card_view:carElevarion="6dp"
-        android:foreground="?attr/selectableItemBackground">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#0000cd"
+        tools:context=".Controladores.CalendarioActivity">
+
+    <TextView
+            android:id="@+id/myDate"
+            android:text="Verificar datas"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:layout_marginRight="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout
+            android:layout_marginTop="50dp"
+            android:background="#ffffff"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+        <CalendarView
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+
+        </CalendarView>
+
+
+    </LinearLayout>
     
-    <LinearLayout android:layout_width="500dp"
-                  android:layout_height="200dp"
-                  android:orientation="vertical"
-                  android:layout_marginTop="40dp"
-                  android:background="#778899"
-                    android:textAlignment="center">
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="34dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="28dp"
+            android:text="Reservar data"/>
 
-        <TextView android:layout_width="400dp"
-                  android:layout_height="100dp"
-                  android:text="Provas"
-                  android:textColor="#ffffff"
-                  android:textAlignment="center"
-                  android:textSize="30sp"/>
+</LinearLayout>
 
-        <FrameLayout android:layout_width="wrap_content"
-                     android:layout_height="wrap_content">
-
-            <ImageView android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:layout_gravity="center_horizontal"
-                       android:id="@+id/card_img"
-                       android:layout_marginTop="6dp"/>
-
-            <ProgressBar android:layout_width="wrap_content"
-                         android:layout_height="wrap_content"
-                         android:id="@+id/card_progress"
-                         style="@android:style/Widget.ProgressBar.Small"
-                         android:layout_gravity="center|center_vertical"
-                         android:visibility="visible"/>
-
-        </FrameLayout>
-
-    </LinearLayout>
-
-    <LinearLayout android:layout_width="500dp"
-                  android:layout_height="200dp"
-                  android:layout_marginTop="270dp"
-                  android:orientation="vertical"
-                  android:background="#778899">
-
-     <TextView android:layout_width="400dp"
-               android:layout_height="100dp"
-               android:text="Atividades"
-               android:textColor="#ffffff"
-               android:textAlignment="center"
-               android:textSize="30sp"/>
-
-    <FrameLayout android:layout_width="wrap_content"
-                 android:layout_height="wrap_content">
-
-        <ImageView android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_gravity="center_horizontal"
-                   android:id="@+id/card_img2"
-                   android:layout_marginTop="10dp"/>
-
-        <ProgressBar android:layout_width="wrap_content"
-                     android:layout_height="wrap_content"
-                     android:id="@+id/card_progress2"
-                     style="@android:style/Widget.ProgressBar.Small"
-                     android:layout_gravity="center|center_vertical"
-                     android:visibility="visible"/>
-
-    </FrameLayout>
-
-    </LinearLayout>
-
-    <LinearLayout android:layout_width="500dp"
-                  android:layout_height="200dp"
-                    android:layout_marginTop="500dp"
-                    android:orientation="vertical"
-                  android:background="#778899">
-
-        <TextView android:layout_width="400dp"
-                  android:layout_height="100dp"
-                  android:text="Aulas"
-                  android:textColor="#ffffff"
-                  android:textAlignment="center"
-                  android:textSize="30sp"/>
-
-        <FrameLayout android:layout_width="wrap_content"
-                     android:layout_height="wrap_content">
-
-            <ImageView android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:layout_gravity="center_horizontal"
-                       android:id="@+id/card_img3"
-                       android:layout_marginTop="10dp"/>
-
-            <ProgressBar android:layout_width="wrap_content"
-                         android:layout_height="wrap_content"
-                         android:id="@+id/card_progress3"
-                         style="@android:style/Widget.ProgressBar.Small"
-                         android:layout_gravity="center|center_vertical"
-                         android:visibility="visible"/>
-
-        </FrameLayout>
-
-    </LinearLayout>
-</android.support.v7.widget.CardView>

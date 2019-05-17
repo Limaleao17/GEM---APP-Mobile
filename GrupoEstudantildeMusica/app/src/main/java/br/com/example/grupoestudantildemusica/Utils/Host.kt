@@ -1,4 +1,4 @@
 package br.com.example.grupoestudantildemusica.Utils
 
 class Host{
-    var host = "http://172.20.0.31:5000"}
+    var host = "http://172.18.27.140:5000"}

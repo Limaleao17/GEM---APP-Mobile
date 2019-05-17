@@ -15,6 +15,11 @@
             android:theme="@style/AppTheme">
         <activity android:name=".Controladores.ContatoActivity">
         </activity>
+        <service android:name=".Utils.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
         <activity android:name=".Controladores.CadastroContatosActivity"
                     android:parentActivityName=".Controladores.ContatoProfessoresListActivity">
         </activity>
@@ -22,7 +27,8 @@
         </activity>
         <activity android:name=".Controladores.OuvidoriaActivity">
         </activity>
-        <activity android:name=".Controladores.ContatoProfessoresListActivity">
+        <activity android:name=".Controladores.ContatoProfessoresListActivity"
+                  android:theme="@style/AppTheme">
         </activity>
         <activity android:name=".Controladores.BibliotecaActivity">
         </activity>

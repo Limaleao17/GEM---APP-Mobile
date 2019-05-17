@@ -7,6 +7,9 @@
         android:layout_width="match_parent"
         android:fitsSystemWindows="true">
 
+    <!--toolbar-->
+    <include layout="@layout/toolbar" />
+
 
     <LinearLayout
             xmlns:android="http://schemas.android.com/apk/res/android"
@@ -18,8 +21,6 @@
             android:padding="12dp"
             tools:context=".Controladores.TelaInicialActivity">
 
-        <!--toolbar-->
-        <include layout="@layout/toolbar" />
 
         <ScrollView android:layout_width="match_parent"
                     android:layout_height="match_parent">

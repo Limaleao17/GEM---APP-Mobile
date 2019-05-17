@@ -33,7 +33,7 @@ object NotificationUtil {
 
     fun create(context: Context, id: Int, intent: Intent, titulo: String, texto:String) {
         createChannel(GEMApplication.getInstance())
-        //val context = GEMApplication.getInstance().applicationContext
+        val context = GEMApplication.getInstance().applicationContext
         val p = PendingIntent.getActivity(context, 0, intent,
             PendingIntent.FLAG_UPDATE_CURRENT)
 

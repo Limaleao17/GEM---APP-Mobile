@@ -20,6 +20,7 @@ import br.com.example.grupoestudantildemusica.*
 import br.com.example.grupoestudantildemusica.Adapter.ContatoAdapter
 import br.com.example.grupoestudantildemusica.Models.Contatos
 import br.com.example.grupoestudantildemusica.Service.ContatoProfessorService
+import br.com.example.grupoestudantildemusica.Utils.NotificationUtil
 
 class ContatoProfessoresListActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -49,6 +50,15 @@ class ContatoProfessoresListActivity : AppCompatActivity(), NavigationView.OnNav
          taskContatos()
          }
 
+        fun enviaNotificacao(contatos: Contatos) {
+
+            val intent = Intent(this, ContatoActivity::class.java)
+
+            //intent.putExtra("contatos", contatos)
+
+            NotificationUtil.create(this, 1, intent, "LMSApp", "Você tem nova atividade na ${contatos.nome}")
+    }
+
         fun taskContatos() {
             Thread {
                 this.contatos =
@@ -58,7 +68,7 @@ class ContatoProfessoresListActivity : AppCompatActivity(), NavigationView.OnNav
                         ContatoAdapter(contatos) {onClickContatos(it)
                         }
 
-                   //enviaNotificacao(this.contatos.get(0))
+                   enviaNotificacao(this.contatos.get(0))
                 }
             }.start()
 
@@ -170,7 +180,10 @@ class ContatoProfessoresListActivity : AppCompatActivity(), NavigationView.OnNav
 
     }
 
-
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_principal, menu)
+        return true
+    }
 
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
