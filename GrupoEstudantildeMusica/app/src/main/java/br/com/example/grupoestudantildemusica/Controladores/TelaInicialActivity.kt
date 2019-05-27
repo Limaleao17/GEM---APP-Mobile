@@ -83,14 +83,6 @@ class TelaInicialActivity : AppCompatActivity(), NavigationView.OnNavigationItem
                 intent = Intent (this, FaltasActivity::class.java)
                 startActivity(intent)
             }
-            R.id.nav_horario -> {
-                Toast.makeText(
-                    this, "Consulte seus horários",
-                    Toast.LENGTH_SHORT
-                )
-                intent = Intent (this, HorarioActivity::class.java)
-                startActivity(intent)
-            }
             R.id.nav_manual_aluno -> {
                 Toast.makeText(
                     this, "Consulte o Manual do aluno",
@@ -155,11 +147,6 @@ class TelaInicialActivity : AppCompatActivity(), NavigationView.OnNavigationItem
         } else if (id == R.id.sobre) {
             Toast.makeText(this, "Sobre", Toast.LENGTH_LONG).show()
             intent = Intent (this, SobreActivity::class.java)
-            startActivity(intent)
-        }
-        else if (id == R.id.action_adicionar){
-            Toast.makeText(this, "Adicionar Professor", Toast.LENGTH_LONG).show()
-            intent = Intent (this, CadastroContatosActivity::class.java)
             startActivity(intent)
         }
         return super.onOptionsItemSelected(item)

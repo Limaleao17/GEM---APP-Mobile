@@ -2,6 +2,7 @@ package br.com.example.grupoestudantildemusica.Utils
 
 import android.content.Intent
 import android.util.Log
+import br.com.example.grupoestudantildemusica.Controladores.ContatoActivity
 import br.com.example.grupoestudantildemusica.Controladores.ContatoProfessoresListActivity
 import br.com.example.grupoestudantildemusica.R
 import com.google.firebase.messaging.FirebaseMessagingService
@@ -33,7 +34,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
     private fun showNotification(mensagemRemota: RemoteMessage) {
 // Intent para abrir quando clicar na notificação
-        val intent = Intent(this, ContatoProfessoresListActivity::class.java)
+        val intent = Intent(this, ContatoActivity::class.java)
             // se título for nulo, utilizar nome no app
         val titulo = mensagemRemota?.notification?.title?: getString(R.string.app_name)
         var mensagem = mensagemRemota?.notification?.body!!

@@ -4,11 +4,11 @@ import android.arch.persistence.room.Room
 import br.com.example.grupoestudantildemusica.Utils.GEMApplication
 
 object DatabaseManager {
-    private var dbIntance: GEMDatabase
+    private var dbIntanceContatos: GEMDatabase
 
     init{
         val appContext = GEMApplication.getInstance().applicationContext
-        dbIntance = Room.databaseBuilder(
+        dbIntanceContatos = Room.databaseBuilder(
             appContext,
             GEMDatabase::class.java,
             "gem.sqlite"
@@ -16,6 +16,7 @@ object DatabaseManager {
     }
 
     fun getContatoDAO(): ContatosDAO {
-        return dbIntance.contatoDao()
+        return dbIntanceContatos.contatoDao()
     }
+
 }

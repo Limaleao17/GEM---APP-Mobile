@@ -12,6 +12,7 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.widget.DefaultItemAnimator
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.SearchView
@@ -39,6 +40,7 @@ class ContatoProfessoresListActivity : AppCompatActivity(), NavigationView.OnNav
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
+
         recyclerContato = findViewById<RecyclerView>(R.id.recyclerContato)
         recyclerContato?.layoutManager = LinearLayoutManager(context)
         recyclerContato?.itemAnimator = DefaultItemAnimator()
@@ -56,7 +58,7 @@ class ContatoProfessoresListActivity : AppCompatActivity(), NavigationView.OnNav
 
             //intent.putExtra("contatos", contatos)
 
-            NotificationUtil.create(this, 1, intent, "LMSApp", "Você tem nova atividade na ${contatos.nome}")
+            NotificationUtil.create(this, 1, intent, "LMSApp", "Você tem um contato novo ${contatos.nome}")
     }
 
         fun taskContatos() {
@@ -78,8 +80,7 @@ class ContatoProfessoresListActivity : AppCompatActivity(), NavigationView.OnNav
 
     fun onClickContatos(contatos: Contatos){
         Toast.makeText(context, "Clicou ${contatos.nome}" ,Toast.LENGTH_SHORT).show()
-        val intent = Intent (context, AjudaActivity::class.java)
-        //intent.putExtra("contatos", contatos )
+        val intent = Intent (context, ContatoActivity::class.java)
         startActivity(intent)
     }
 
@@ -99,6 +100,8 @@ class ContatoProfessoresListActivity : AppCompatActivity(), NavigationView.OnNav
 
         val navigationView = findViewById<NavigationView>(R.id.view_menu_lateral)
         navigationView.setNavigationItemSelectedListener(this)
+
+
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
@@ -125,14 +128,6 @@ class ContatoProfessoresListActivity : AppCompatActivity(), NavigationView.OnNav
                     Toast.LENGTH_SHORT
                 )
                 intent = Intent (this, FaltasActivity::class.java)
-                startActivity(intent)
-            }
-            R.id.nav_horario -> {
-                Toast.makeText(
-                    this, "Consulte seus horários",
-                    Toast.LENGTH_SHORT
-                )
-                intent = Intent (this, HorarioActivity::class.java)
                 startActivity(intent)
             }
             R.id.nav_manual_aluno -> {
@@ -183,6 +178,7 @@ class ContatoProfessoresListActivity : AppCompatActivity(), NavigationView.OnNav
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_principal, menu)
         return true
+
     }
 
 
@@ -200,5 +196,6 @@ class ContatoProfessoresListActivity : AppCompatActivity(), NavigationView.OnNav
         }
         return super.onOptionsItemSelected(item)
     }
+
 
 }

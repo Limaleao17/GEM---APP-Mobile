@@ -12,25 +12,24 @@
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#0000cd"
+            android:background="#fff"
             android:orientation="vertical"
             tools:layout_editor_absoluteY="0dp"
             tools:layout_editor_absoluteX="89dp">
 
         <ImageView
-                android:layout_width="302dp"
-                android:layout_height="259dp"
+                android:layout_width="match_parent"
+                android:layout_height="179dp"
                 android:layout_marginTop="1dp"
-                android:layout_marginLeft="50dp"
                 android:padding="50dp"
                 android:adjustViewBounds="true"
-                android:src="@drawable/gem_inicial"/>
+                android:src="@drawable/logo_gem_um"/>
 
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:textColor="#ffffff"
+                android:textColor="#000000"
                 android:textStyle="bold"
                 android:textSize="40dp"
                 android:layout_marginTop="10dp"
@@ -41,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:layout_marginLeft="70dp"
-                android:textColor="#ffffff"
+                android:textColor="#000000"
                 android:layout_marginTop="30dp"
                 android:text="@string/login"/>
 
@@ -62,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="70dp"
                 android:layout_gravity="left"
-                android:textColor="#ffffff"
+                android:textColor="#000000"
                 android:text="@string/Senha"
                 android:layout_marginTop="40dp"/>
 
@@ -94,7 +93,7 @@
                 android:background="@drawable/model_buton"
                 android:text="@string/enter"
                 android:textColor="#000000"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="100dp"
                 android:layout_marginLeft="70dp"
                 android:layout_marginRight="70dp"/>
 
@@ -102,10 +101,10 @@
                 android:id="@+id/tv_forgot_password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:textColor="#ffffff"
+                android:textSize="10dp"
+                android:textColor="#000000"
                 android:text="@string/esqueci_minha_senha"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="30dp"
                 android:layout_gravity="center_horizontal"/>
 
     </LinearLayout>

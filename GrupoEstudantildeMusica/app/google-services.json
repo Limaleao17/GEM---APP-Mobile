@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "221862391875-1b84lqi0dn39j1ictijf7cqc3ocl6uvm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.example.grupoestudantildemusica",
+            "certificate_hash": "fff416709fe7fcc04cb49406d062ce4a3b6dbaac"
+          }
+        },
+        {
           "client_id": "221862391875-748t1bevmk191hvj9jmiugoiqhhkrmuf.apps.googleusercontent.com",
           "client_type": 3
         }

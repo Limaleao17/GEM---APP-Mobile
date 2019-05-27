@@ -7,4 +7,38 @@
         android:layout_height="match_parent"
         tools:context=".Controladores.OuvidoriaActivity">
 
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+    <ImageView
+
+            android:src="@drawable/logo_gem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="600dp"
+    />
+
+    </LinearLayout>
+
+    <TextView
+            android:layout_marginTop="200dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:text="Para maiores informações ligue:"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <TextView
+            android:layout_marginTop="250dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:text="(11) 3456-9087"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
 </android.support.constraint.ConstraintLayout>

@@ -15,4 +15,6 @@
     <string name="title_activity_horario">HorarioActivity</string>
     <string name="eliminar_contatos">Eliminar</string>
     <string name="adicionar_contato">Adicionar</string>
+    <string name="title_activity_registrar">RegistrarActivity</string>
+
 </resources>
